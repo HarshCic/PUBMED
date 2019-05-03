@@ -1,0 +1,30 @@
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+body {
+  background: #ededed;
+  font-family: 'Merriweather', serif;
+  color: #777777;
+}
+.container {
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+  font-style: italic;
+  border-bottom: 1px solid #D81F32;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+}
+ul {
+  padding-left: 20px;
+}
+
+ul { 
+  counter-reset: item; 
+  /* Hides default counter */
+  list-style: none;
+}
