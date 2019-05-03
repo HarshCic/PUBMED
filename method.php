@@ -17,6 +17,7 @@
         <hr style=" background-color: #9abff9; height: 6px;">
 
         <?php
+        $harsh=0;
         $email = $_POST['email'];
         $url = "https://lrphilqumb.execute-api.us-east-1.amazonaws.com/sandbox";
         $data = file_get_contents($url);
@@ -35,7 +36,11 @@
                 }
             }
             else {
-                echo " No records exists";
+                if ($harsh==0) {
+                    echo "No record exists";
+                    $harsh++;
+                }
+                
             }
         }
 
