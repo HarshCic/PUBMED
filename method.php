@@ -34,6 +34,9 @@
                     $output1 = " ";
                 }
             }
+            else {
+                echo " No records exists";
+            }
         }
 
         ?>
